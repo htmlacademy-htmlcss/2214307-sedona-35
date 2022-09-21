@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Константин Арзамасцев](https://up.htmlacademy.ru/htmlcss/35/user/2214307).
-* Наставник: [Ярослав Шевцов] (https://htmlacademy.ru/profile/redx).
+* Наставник: [Ярослав Шевцов](https://htmlacademy.ru/profile/redx).
 
 ---
 
