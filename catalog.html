@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <title>HTML Academy: Седона/каталог</title>
 
   <head>
+    <title>HTML Academy: Седона/каталог</title>
     <meta charset="utf-8">
   </head>
 
@@ -10,12 +10,12 @@
     <header class="main-header">
       <nav class="navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="sedona.webp" width="170" height="70" alt="Логотип сайта городка Седона">
+          <img src="sedona.png" width="170" height="70" alt="Логотип сайта городка Седона">
         </a>
         <ul class="menu-main">
           <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
           <li class="navigation-item"> <a class="navigation-link" href="#">О Седоне</a></li>
-          <li class="navigation-item"><a href="catalog.html">Гостиницы</a></li>
+          <li class="navigation-item-current"><a href="catalog.html">Гостиницы</a></li>
         </ul>
         <ul class="menu-main navigation-user">
           <li class="navigation-item">
@@ -45,12 +45,73 @@
         <a class="home" href="index.html">
           <img src="home.png" style="width: 20px;" alt="Вернуться назад">
         </a>
-        <h3>>Гостиницы</h3>
-        <table>
-          <td>
-            <tr></tr>
-          </td>
-        </table>
+        <p>>Гостиницы</p>
+        <ul class="checkbox-list">
+          <li class="checkbox-item">
+            <h3 class="checkbox-header">Инфраструктура:</h3>
+          </li>
+          <li class="checkbox-item">
+            <form>
+              <label>
+                <input type="checkbox" name="a" value="Бассейн"> Бассейн
+              </label>
+            </form>
+          </li>
+          <li class="checkbox-item">
+            <p><input type="checkbox" name="a" value="Парковка"> Парковка</p>
+          </li>
+          <li class="checkbox-item">
+            <p><input type="checkbox" name="a" value="Wi-Fi">Wi-Fi</p>
+          </li>
+        </ul>
+        <ul class="radiobutton-list">
+          <li class="radiobutton-item">
+            <h3 class="radiobutton-header">Инфраструктура:</h3>
+          </li>
+          <li class="radiobutton-item">
+            <form>
+              <label>
+                <input type="radio" name="hostel1" value="yes">
+                Гостиница
+              </label>
+            </form>
+          </li>
+          <li class="radiobutton-item">
+            <form>
+              <label>
+                <input type="radio" name="hostel2" value="yes">
+                Мотель
+              </label>
+            </form>
+          <li class="radiobutton-item">
+            <form>
+              <label>
+                <input type="radio" name="hostel3" value="yes">
+                Апартаменты
+              </label>
+            </form>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h3>Стоимость, ₽:</h3>
+          </li>
+          <li>
+            <!-- не могу придумать как привести к стилю как в макете -->
+            <input class="#" type="number" min="0" max="9000" placeholder="от 0" id="1">
+            <input class="#" type="number" min="9000" max="9000" placeholder="до 9000" id="2">
+          </li>
+          <li>
+            <input type="range" min="0" max="9000" step="100" value="4500">
+            <!-- как привязать ползунок к форме? -->
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="submit" value="Применить">
+            <input type="reset">
+          </li>
+        </ul>
       </section>
       <!-- <p>тут будет каталог</p> -->
 
@@ -63,8 +124,8 @@
           <input name="s" placeholder="Ваш e-mail" type="text">
           <input type="submit" value="Подписаться">
         </form>
-
       </section>
+
       <div class="footer-social">
         <!-- <section class="footer-social"> -->
         <ul class="footer-social-list">
