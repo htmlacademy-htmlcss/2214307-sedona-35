@@ -40,80 +40,104 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h1>Гостиницы Седоны</h1>
-        <a class="home" href="index.html">
-          <img src="home.png" style="width: 20px;" alt="Вернуться назад"><p>>Гостиницы</p>
+      <header class="inner-header">
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumps-list">
+          <li class="breadcrumps-item">
+            <a class="breadcrumps-link" href="index.html">
+              <img src="home.png" style="width: 20px;" alt="Вернуться назад">
+            </a>
+          </li>
+          <li class="breadcrumps-item">
+            <a class="breadcrumps-link">>Гостиницы</a>
+          </li>
+        </ul>
+      </header>
+      <section class="catalog-products">
+        <h2 class="visyaly-hidden">Фильтры</h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Инфраструктура:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+
+                  <input type="checkbox" name="a" value="Бассейн"> Бассейн
+                </label>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input type="checkbox" name="a" value="Парковка"> Парковка
+                </label>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input type="checkbox" name="a" value="Wi-Fi">Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Тип жилья:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input type="radio" name="hostel1" value="hostel">
+                  Гостиница
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input type="radio" name="hostel2" value="motel">
+                  Мотель
+                </label>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input type="radio" name="hostel3" value="apartments">
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+        <!-- <fieldset class="catalog-filter-group"> -->
+        <h3 class="catalog-filter-title">Стоимость,Р:</h3>
+        <form>
+
+          <!-- не могу придумать как привести к стилю как в макете -->
+          <input class="#" type="number" min="0" max="9000" placeholder="от 0" id="1">
+          <input class="#" type="number" min="9000" max="9000" placeholder="до 9000" id="2">
+          <input type="range" min="0" max="9000" step="100" value="4500">
+          <input type="submit" value="Применить">
+          <input type="reset">
+
+        </form>
+
+        <!-- как привязать ползунок к форме? -->
+
+        <span class="products-count"> Найдено гостиниц: 38</span>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Сначала популярное</option>
+          <option value="cheap">Сначала дешёвое</option>
+          <option value="expensive">Сначала дорогое</option>
+        </select>
+
+        <a href="#" class="button button-light">
+          <span class="visually-hidden">Показать список</span>
         </a>
-        <ul class="checkbox-list">
-          <li class="checkbox-item">
-            <h3 class="checkbox-header">Инфраструктура:</h3>
-          </li>
-          <li class="checkbox-item">
-            <form>
-              <label>
-                <input type="checkbox" name="a" value="Бассейн"> Бассейн
-              </label>
-            </form>
-          </li>
-          <li class="checkbox-item">
-            <p><input type="checkbox" name="a" value="Парковка"> Парковка</p>
-          </li>
-          <li class="checkbox-item">
-            <p><input type="checkbox" name="a" value="Wi-Fi">Wi-Fi</p>
-          </li>
-        </ul>
-        <ul class="radiobutton-list">
-          <li class="radiobutton-item">
-            <h3 class="radiobutton-header">Инфраструктура:</h3>
-          </li>
-          <li class="radiobutton-item">
-            <form>
-              <label>
-                <input type="radio" name="hostel1" value="hostel">
-                Гостиница
-              </label>
-            </form>
-          </li>
-          <li class="radiobutton-item">
-            <form>
-              <label>
-                <input type="radio" name="hostel2" value="motel">
-                Мотель
-              </label>
-            </form>
-          <li class="radiobutton-item">
-            <form>
-              <label>
-                <input type="radio" name="hostel3" value="apartments">
-                Апартаменты
-              </label>
-            </form>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <h3>Стоимость, ₽:</h3>
-          </li>
-          <li>
-            <!-- не могу придумать как привести к стилю как в макете -->
-            <input class="#" type="number" min="0" max="9000" placeholder="от 0" id="1">
-            <input class="#" type="number" min="9000" max="9000" placeholder="до 9000" id="2">
-          </li>
-          <li>
-            <input type="range" min="0" max="9000" step="100" value="4500">
-            <!-- как привязать ползунок к форме? -->
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="submit" value="Применить">
-            <input type="reset">
-          </li>
-        </ul>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать по одному</span>
+        </a>
+        <div class="hostel-card">
+          <a class="hostel-card-link" href="#">
+            <img class="hostel-card-image" src="#" alt="Дырка в скале">
+            <h3 class="hostel-card-title">Amara Resort & Spa</h3>
+          </a>
+        </div>
+
       </section>
       <!-- <p>тут будет каталог</p> -->
-
     </main>
     <footer class="main-footer">
       <section class="footer-post">
@@ -142,7 +166,7 @@
                 src="youtube-logo-hd-8.png" alt="youtube"></a>
           </li>
           <li class="footer-social-item">
-            <p class="footer-social-contact">+7(812)812-12-12</p>
+            <a class="footer-social-contact" href="tel:+7(812)812-12-12">+7(812)812-12-12</a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link" href="https://htmlacademy.ru/intensive">.html academy</a>
