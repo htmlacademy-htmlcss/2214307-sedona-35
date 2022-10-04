@@ -38,8 +38,9 @@ header {
   text-transform: capitalize;
 }
 
-.logo {
+.welcome{
   background-image: url("../images/index-background.jpg");
+
 }
 
 .advantages-title {
