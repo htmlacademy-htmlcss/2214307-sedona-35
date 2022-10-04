@@ -278,7 +278,7 @@ header {
   color: #000000;
 }
 
-
+/* не получается выставить фон  */
 .inner-header{
   background-image:url("..//images/back.jpg");
   background-size: cover;
