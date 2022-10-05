@@ -13,8 +13,19 @@
   font-weight: 700;
 }
 
-li {
+.menu-main,
+.advantages-list,
+.services-list,
+.navigation-user,
+.catalog-filter-list,
+.hostel-card-list,
+.pagination {
   list-style-type: none;
+}
+
+/* знаю,что не верно,ищу способ */
+a {
+  text-decoration: none;
 }
 
 body {
@@ -23,9 +34,11 @@ body {
   line-height: 21px;
   background: #FFFFFF;
   color: #000000;
+  list-style-type: none;
 }
 
-header {
+.main-header,
+.catalog-header {
   background-color: #FFFFFF;
   color: #000000;
 
@@ -150,7 +163,6 @@ header {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  display: flex;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
@@ -227,6 +239,8 @@ header {
   text-align: center;
   text-transform: uppercase;
   color: #333333;
+  background: #F2F2F2;
+  border-radius: 4px;
 
 }
 
@@ -257,14 +271,34 @@ header {
 
 /* не понимаю как правильно вписать бэк,что бы не плыло качество */
 .footer-post {
-  background-image: url("..//images/размытый.jpg");
+  background-image: url("../images/razmitiy.jpg");
   width: 100%;
   height: 414.86px;
 }
 
 /* как в каталоге убрать фон? */
 .footer-post-catalog {
-  background-color: #FFFFFF;
+  background-color: white;
+  background-image: none;
+}
+
+.catalog-footer-post {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-footer-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
 }
 
 .telephone {
@@ -279,8 +313,128 @@ header {
 }
 
 /* не получается выставить фон  */
-.inner-header{
-  background-image:url("..//images/back.jpg");
+.inner-header {
+  background-image: url("..//images/back.jpg");
   background-size: cover;
+}
 
+.button {
+  font-family: "PT Sans", sans-serif;
+  background: #756157;
+  border-radius: 4px;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 50px;
+  gap: 10px;
+}
+
+.button-blue {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #82B3D3;
+  border-radius: 4px;
+  justify-content: center;
+  padding: 8px 50px;
+  gap: 10px;
+}
+
+.select-control {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.button-green {
+  background: #7DB54F;
+  border-radius: 4px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  justify-content: center;
+  padding: 8px 50px;
+  gap: 10px;
+}
+
+.pagination-link {
+  background: #82B3D3;
+  border-radius: 4px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-current {
+  background: #F2F2F2;
+  border-radius: 4px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.button-submit {
+  background: #82B3D3;
+  border-radius: 0px 4px 4px 0px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 50px;
+  gap: 10px;
+  border: #82B3D3;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+}
+
+.email {
+  background: #F2F2F2;
+  border-radius: 4px 0px 0px 4px;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 260px;
+  font-family:"PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  color: #000000;
+  opacity: 0.6;
 }
