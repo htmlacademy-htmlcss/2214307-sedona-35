@@ -2,12 +2,13 @@
 <html lang="ru">
 
   <head>
-    <title>HTML Academy: Седона/каталог</title>
     <meta charset="utf-8">
+    <title>HTML Academy: Седона/каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
-    <header class="main-header">
+    <header class="catalog-header">
       <nav class="navigation">
         <a class="main-header-logo" href="index.html">
           <img src="images/sedona.svg" width="170" height="70" alt="Логотип сайта городка Седона">
@@ -33,13 +34,13 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда</a>
+            <a class="button" href="#">Хочу сюда</a>
           </li>
         </ul>
 
       </nav>
     </header>
-    <main>
+    <main class="main-catalog">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumps-list">
@@ -98,7 +99,6 @@
             </ul>
           </fieldset>
         </form>
-        <!-- <fieldset class="catalog-filter-group"> -->
         <h3 class="catalog-filter-title">Стоимость,Р:</h3>
         <form>
 
@@ -106,10 +106,12 @@
           <input class="#" type="number" min="0" max="9000" placeholder="от 0" id="1">
           <input class="#" type="number" min="9000" max="9000" placeholder="до 9000" id="2">
           <input type="range" min="0" max="9000" step="100" value="4500">
-          <button type="submit" value="Применить">Применить</button>
-          <button type="reset">Очистить</button>
+          <button type="submit" class="button-blue" value="Применить">Применить</button>
+          <button type="reset" class="button-reset">Сбросить</button>
 
         </form>
+
+
 
         <!-- как привязать ползунок к форме? -->
 
@@ -120,13 +122,13 @@
           <option value="expensive">Сначала дорогое</option>
         </select>
 
-        <a href="#" class="button button-light">
+        <a href="#" class="button-light">
           <span class="visually-hidden">Показать список</span>
         </a>
-        <a class="button" href="#">
+        <a class="button-card" href="#">
           <span class="visually-hidden">Показать карточки</span>
         </a>
-        <a class="button" href="#">
+        <a class="button-one" href="#">
           <span class="visually-hidden">Показать по одному</span>
         </a>
         <ul class="hostel-card-list">
@@ -137,8 +139,8 @@
             </a>
             <b class="hostel-card-type">Гостиница</b>
             <p class="hostel-card-type">От 4000 ₽</p>
-            <a class="hostel-card-info" href="#"> Подробнее</a>
-            <a class="favorites" href="#">В избранное</a>
+            <a class="hostel-card-info button" href="#"> Подробнее</a>
+            <a class="favorites button-blue" href="#">В избранное</a>
             <div class="rating-mini">
               <span class="active">*</span>
               <span class="active">*</span>
@@ -155,8 +157,8 @@
             </a>
             <b class="hostel-card-type">Гостиница</b>
             <p class="hostel-card-type">От 5000 ₽</p>
-            <a class="hostel-card-info" href="#"> Подробнее</a>
-            <a class="favorites" href="#">В избранное</a>
+            <a class="hostel-card-info button" href="#"> Подробнее</a>
+            <a class="favorites button-green" href="#">В избранном</a>
             <div class="rating-mini">
               <span class="active">*</span>
               <span class="active">*</span>
@@ -173,8 +175,8 @@
             </a>
             <b class="hostel-card-type">Гостиница</b>
             <p class="hostel-card-type">От 2500 ₽</p>
-            <a class="hostel-card-info" href="#"> Подробнее</a>
-            <a class="favorites" href="#">В избранное</a>
+            <a class="hostel-card-info button" href="#"> Подробнее</a>
+            <a class="favorites button-blue" href="#">В избранное</a>
             <div class="rating-mini">
               <span class="active">*</span>
               <span class="active">*</span>
@@ -191,8 +193,8 @@
             </a>
             <b class="hostel-card-type">Гостиница</b>
             <p class="hostel-card-type">От 1500 ₽</p>
-            <a class="hostel-card-info" href="#"> Подробнее</a>
-            <a class="favorites" href="#">В избранное</a>
+            <a class="hostel-card-info button" href="#"> Подробнее</a>
+            <a class="favorites button-blue" href="#">В избранное</a>
             <div class="rating-mini">
               <span class="active">*</span>
               <span class="active">*</span>
@@ -225,21 +227,26 @@
       <!-- <p>тут будет каталог</p> -->
     </main>
     <footer class="main-footer">
-      <section class="footer-post">
-        <h2 class="main-footer-post">Подпишитесь на рассылку</h2>
-        <p class="main-footer-description">Только полезная информация и никакого спама,честное бойскаутское!</p>
-        <form action="#" method="post">
-          <input name="s" placeholder="Ваш e-mail" type="text">
-          <button type="submit">Подписаться</button>
+      <section class="footer-post-catalog">
+        <h2 class="catalog-footer-post">Подпишитесь на рассылку</h2>
+        <p class="catalog-footer-description">Только полезная информация и никакого спама,честное бойскаутское!</p>
+        <form class="new-form" action="http://echo.htmlacademy.ru/" method="post">
+          <label for="e-mail">
+            <span class="visually-hidden">Введите e-mail.</span>
+          </label>
+          <input class="field" placeholder="Ваш e-mail" id="email" type="text">
+          <input type="submit" class="button-submit" value="Подписаться">
         </form>
+
       </section>
 
       <div class="footer-social">
-        <!-- <section class="footer-social"> -->
+
         <ul class="footer-social-list">
           <li>
             <!-- все логотипы на данный момент временные для удобства глаза -->
-            <a class="footer-social-button" href="https://vk.com/htmlacademy"><img src="images/vk.svg" width="24" height="14" alt="вконтакте"></a>
+            <a class="footer-social-button" href="https://vk.com/htmlacademy"><img src="images/vk.svg" width="24"
+                height="14" alt="вконтакте"></a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-button" href="https://t.me/htmlacademy"><img src="#" alt="telegram"> </a>
@@ -252,8 +259,9 @@
         <a class="htmlacademy" href="https://htmlacademy.ru/intensive">.html academy</a>
 
         <!-- Подвал сайта -->
-        <!-- </section> -->
+
       </div>
     </footer>
   </body>
+
 </html>
