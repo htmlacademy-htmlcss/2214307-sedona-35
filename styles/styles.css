@@ -13,28 +13,43 @@
   font-weight: 700;
 }
 
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background: #F2F2F2;
+  color: #000000;
+  list-style-type: none;
+  width: 1280px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
 .menu-main,
 .advantages-list,
 .services-list,
 .navigation-user,
 .catalog-filter-list,
 .hostel-card-list,
-.pagination {
+.pagination,
+.breadcrumps-item {
   list-style-type: none;
 }
 
 /* знаю,что не верно,ищу способ */
 a {
   text-decoration: none;
-}
-
-body {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  background: #FFFFFF;
-  color: #000000;
-  list-style-type: none;
 }
 
 .main-header,
@@ -58,7 +73,7 @@ body {
 
 .welcome {
   background-color: aqua;
-  background-image: url("../images/index-background.jpg");
+  background-image: url("../images/index-background.jpg"), url("../images/Vectorw.svg");
   background-repeat: no-repeat;
   background-size: cover;
   Width: 100%;
@@ -178,8 +193,6 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
-  background-color: aqua;
-
 }
 
 .breadcrumps-link {
@@ -189,8 +202,6 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
-  background-color: aqua;
-
 }
 
 .products-count {
@@ -265,15 +276,15 @@ body {
   line-height: 26px;
   text-align: center;
   color: white;
-
-
 }
 
-/* не понимаю как правильно вписать бэк,что бы не плыло качество */
 .footer-post {
   background-image: url("../images/razmitiy.jpg");
-  width: 100%;
+  width: 1200px;
   height: 414.86px;
+  justify-content: center;
+  align-items: center;
+
 }
 
 /* как в каталоге убрать фон? */
@@ -312,9 +323,9 @@ body {
   color: #000000;
 }
 
-/* не получается выставить фон  */
-.inner-header {
+.catalog-products {
   background-image: url("..//images/back.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -429,7 +440,7 @@ body {
   align-items: center;
   padding: 12px 20px;
   gap: 260px;
-  font-family:"PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -437,4 +448,8 @@ body {
   display: flex;
   color: #000000;
   opacity: 0.6;
+}
+
+.main-index {
+  background: #FFFFFF;
 }
