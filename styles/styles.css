@@ -19,17 +19,18 @@ html {
 }
 
 body {
-  margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background: #F2F2F2;
   color: #000000;
   list-style-type: none;
-  }
+
+}
 
 .main-container {
   flex-grow: 1;
@@ -42,7 +43,8 @@ body {
 .catalog-filter-list,
 .hostel-card-list,
 .pagination,
-.breadcrumps-item {
+.breadcrumps-item,
+.footer-social-list {
   list-style-type: none;
 }
 
@@ -58,6 +60,17 @@ a {
 
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0;
+}
+
+.menu-main {
+  margin: 0;
+  padding: 0;
+}
+
 .navigation-item {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -68,6 +81,19 @@ a {
   text-decoration: none;
   text-transform: capitalize;
   color: black;
+  margin: 0;
+  padding: 0;
+  width: 339;
+}
+
+.navigation-user {
+  max-width: 268px;
+  margin-left: auto;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .welcome {
@@ -76,7 +102,11 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   Width: 100%;
-  Height: 485px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
 }
 
 .info {
@@ -105,8 +135,17 @@ a {
   color: #333333;
 }
 
-.advantages-item {
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   text-align: center;
+}
+
+.advantages-item {
+  width: 230px;
 }
 
 .advantages-title {
@@ -128,8 +167,17 @@ a {
   line-height: 21px;
 }
 
-.services {
+.services-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   text-align: center;
+}
+
+.services-item {
+  width: 230px;
 }
 
 .services-title {
@@ -144,7 +192,6 @@ a {
 
 .services-description {
   color: #333333;
-
 }
 
 .booking {
@@ -254,39 +301,53 @@ a {
 
 }
 
-.main-footer-post {
+.page-footer-container {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+
+}
+
+.footer-post {
+  background-image: url("../images/razmitiy.jpg");
+  width: 100%;
+  justify-content: center;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   text-align: center;
+  padding: 0;
+}
+
+.main-footer-post {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
-
-
 }
 
 .main-footer-description {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
   color: white;
 }
 
-.footer-post {
-  background-image: url("../images/razmitiy.jpg");
-  width: 1200px;
-  height: 414.86px;
-  justify-content: center;
-  align-items: center;
+.footer-social {
+  background-color: #FFFFFF;
 
 }
 
-/* как в каталоге убрать фон? */
+.footer-social-list {
+  width: 142px;
+  margin-right: 70px;
+}
+
+.htmlacademy {
+  margin-left: auto;
+  max-width: 190px;
+}
+
 .footer-post-catalog {
   background-color: white;
   background-image: none;
@@ -320,6 +381,8 @@ a {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  max-width: 720px;
+  margin-left: auto;
 }
 
 .catalog-products {
@@ -451,4 +514,5 @@ a {
 
 .main-index {
   background: #FFFFFF;
+  background-size: 100% auto;
 }
