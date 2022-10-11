@@ -18,11 +18,17 @@ html {
   height: 100%;
 }
 
-body {
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+  background: #FFFFFF;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+body {
   min-height: 100%;
-  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -89,11 +95,6 @@ a {
 .navigation-user {
   max-width: 268px;
   margin-left: auto;
-}
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .welcome {
@@ -305,6 +306,7 @@ a {
   width: 1200px;
   display: flex;
   margin: 0 auto;
+  flex-shrink: 0;
 
 }
 
