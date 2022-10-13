@@ -103,38 +103,39 @@
             </fieldset>
           </form>
           <div>
-          <h3 class="catalog-filter-title">Стоимость,Р:</h3>
-          <form>
+            <h3 class="catalog-filter-title">Стоимость,Р:</h3>
+            <form>
 
-            <!-- не могу придумать как привести к стилю как в макете -->
-            <input class="#" type="number" min="0" max="9000" placeholder="от 0" id="1">
-            <input class="#" type="number" min="9000" max="9000" placeholder="до 9000" id="2">
-            <input type="range" min="0" max="9000" step="100" value="4500">
-            <button type="submit" class="button-blue" value="Применить">Применить</button>
-            <button type="reset" class="button-reset">Сбросить</button>
-          </form>
-        </div>
+              <!-- не могу придумать как привести к стилю как в макете -->
+              <input class="#" type="number" min="0" max="9000" placeholder="от 0" id="1">
+              <input class="#" type="number" min="9000" max="9000" placeholder="до 9000" id="2">
+              <input type="range" min="0" max="9000" step="100" value="4500">
+              <button type="submit" class="button-blue" value="Применить">Применить</button>
+              <button type="reset" class="button-reset">Сбросить</button>
+            </form>
+          </div>
         </section>
-        <!-- как привязать ползунок к форме? -->
 
-        <span class="products-count"> Найдено гостиниц: 38</span>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярное</option>
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="expensive">Сначала дорогое</option>
-        </select>
-
-        <a href="#" class="button-light">
-          <span class="visually-hidden">Показать список</span>
-        </a>
-        <a class="button-card" href="#">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button-one" href="#">
-          <span class="visually-hidden">Показать по одному</span>
-        </a>
+        <div class="finded">
+          <span class="products-count"> Найдено гостиниц: 38</span>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="popular">Сначала популярное</option>
+            <option value="cheap">Сначала дешёвое</option>
+            <option value="expensive">Сначала дорогое</option>
+          </select>
+          <!-- во что обернуть кнопки,что бы прописать свойства? -->
+          <a href="#" class="button-light">
+            <span class="visually-hidden">список</span>
+          </a>
+          <a class="button-card" href="#">
+            <span class="visually-hidden">rарточки</span>
+          </a>
+          <a class="button-one" href="#">
+            <span class="visually-hidden">по одному</span>
+          </a>
+        </div>
         <ul class="hostel-card-list">
-          <li>
+          <li class="hostel-card-item">
             <a class="hostel-card-link" href="#">
               <img class="hostel-card-image" src="images/hotel-1.jpg" width="300" height="212" alt="Дырка в скале">
               <h3 class="hostel-card-title">Amara Resort & Spa</h3>
@@ -152,7 +153,7 @@
             </div>
             <span class="rating">Рейтинг: 8,5</span>
           </li>
-          <li>
+          <li class="hostel-card-item">
             <a class="hostel-card-link" href="#">
               <img class="hostel-card-image" src="images/hotel-2.jpg" width="300" height="212" alt="Горы и радуга">
               <h3 class="hostel-card-title">Villas at Poco Diablo</h3>
@@ -170,7 +171,7 @@
             </div>
             <span class="rating">Рейтинг: 9,2</span>
           </li>
-          <li>
+          <li class="hostel-card-item">
             <a class="hostel-card-link" href="#">
               <img class="hostel-card-image" src="images/hotel-3.jpg" width="300" height="212" alt="Красная скала">
               <h3 class="hostel-card-title">Desert Quail Inn</h3>
@@ -188,7 +189,7 @@
             </div>
             <span class="rating">Рейтинг: 6,9</span>
           </li>
-          <li>
+          <li class="hostel-card-item">
             <a class="hostel-card-link" href="#">
               <img class="hostel-card-image" src="images/hotel-4.jpg" width="300" height="212" alt="Гора и звезды">
               <h3 class="hostel-card-title">GreenTree Inn</h3>

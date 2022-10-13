@@ -26,16 +26,18 @@ body {
   background: #F2F2F2;
   color: #000000;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-container {
   width: 1200px;
   margin: 0 auto;
-  background:#FFFFFF;
+  background: #FFFFFF;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-
+  flex-grow: 1;
 }
 
 .main-container {
@@ -159,6 +161,7 @@ a {
   justify-content: space-around;
   flex-wrap: wrap;
   text-align: center;
+  width: 1200px;
 }
 
 .advantages-list {
@@ -200,6 +203,7 @@ a {
   justify-content: space-around;
   margin: 0;
   padding: 0;
+  width: 1200px;
 }
 
 .services-list {
@@ -336,13 +340,55 @@ a {
 
 }
 
-.page-footer-container {
-  width: 1200px;
+.finded {
   display: flex;
-  margin: 0 auto;
-  flex-shrink: 0;
-
+  width: 1060px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  margin-left: 70px;
 }
+
+.products-count {
+  width: 338px;
+  margin-right: 192px;
+}
+
+.select-control {
+  width: 292px;
+  padding: 14px 20px;
+}
+
+.hostel-card-list {
+  display: flex;
+  width: 1100px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.hostel-card-item {
+  width: 300px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 10px;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  width: 1060px;
+  margin-left: 70px;
+}
+
+
 
 .footer-post {
   background-image: url("../images/razmitiy.jpg");
@@ -369,9 +415,15 @@ a {
   color: white;
 }
 
-.footer-social {
-  background-color: #FFFFFF;
-
+.page-footer-container {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  flex-shrink: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
 }
 
 .footer-social-list {
@@ -444,7 +496,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: 8px 50px;
-  gap: 10px;
+  width: 140px;
 }
 
 .button-blue {
@@ -461,7 +513,7 @@ a {
   border-radius: 4px;
   justify-content: center;
   padding: 8px 50px;
-  gap: 10px;
+  width: 140px;
 }
 
 .select-control {
@@ -561,6 +613,6 @@ a {
 }
 
 .catalog-filter-group {
-    padding: 0;
-    width: 150.43px;
-    margin: auto;
+  padding: 0;
+  width: 150.43px;
+  margin: auto;
