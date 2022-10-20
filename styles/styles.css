@@ -688,11 +688,10 @@ a {
 
 .value {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
   padding: 0px;
-  gap: 70px;
+  gap: 36px;
 }
 
 .catalog-filter-list .catalog-filter-group {
@@ -706,7 +705,7 @@ a {
   justify-content: flex-end;
   align-items: flex-end;
   padding: 0px;
-  gap: 70px;
+
 }
 
 .right-buttoms {
