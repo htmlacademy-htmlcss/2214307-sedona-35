@@ -77,6 +77,8 @@ a {
 }
 
 .main-header-logo {
+  display: block;
+  margin-bottom: -5px;
   width: 138px;
   margin-right: 30px;
   margin-left: 70px;
@@ -89,6 +91,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 8px;
 
 }
 
@@ -114,9 +117,10 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  padding: 0px;
+  padding: 0;
   margin-left: auto;
   margin-right: 70px;
+  flex-wrap: wrap;
 }
 
 .navigation-user .navigation-link {
@@ -176,18 +180,19 @@ a {
 
 
 .advantages-list {
+  min-height: 384px;
   padding: 0;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   text-align: center;
-  margin: 0px;
+  margin: 0;
 }
 
 .advantages-item {
   width: 230px;
   text-align: center;
-  padding: 92px 85px 111px;
+  padding: 92px 85px;
 
 }
 
@@ -195,7 +200,7 @@ a {
   background: rgba(131, 179, 211, 0.2);
 }
 
-.sedona .advantages-item:nth-child(1n) {
+.sedona .advantages-item {
   background: #82B3D3;
 }
 
@@ -220,18 +225,19 @@ a {
 }
 
 .devil {
+  min-height: 384px;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   width: 1200px;
 }
 
-.devil .advantages-item:nth-child(2){
+.devil .advantages-item {
   background: #82B3D3;
 }
 
 .services-list {
+  min-height: 384px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -242,7 +248,7 @@ a {
 
 .services-item {
   width: 230px;
-  padding: 80px 85px 81px;
+  padding: 80px 85px;
 
 }
 
@@ -260,7 +266,7 @@ a {
   color: #333333;
 }
 
-.services-item:nth-child(odd){
+.services-item:nth-child(odd) {
   background: rgba(131, 179, 211, 0.12);
 }
 
@@ -370,15 +376,13 @@ a {
   border: 2px solid #000000;
   border-radius: 4px;
   margin-right: 8px;
-
+  flex-wrap: wrap;
 }
 
 .hostel-card-list {
-  display: flex;
+  display: grid;
   width: 1100px;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: flex-start;
+  grid-template-columns: 340px 340px 340px;
   gap: 20px;
 }
 
@@ -414,7 +418,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   width: 1060px;
   margin-left: 70px;
 }
@@ -466,9 +470,10 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   min-width: 142px;
   margin-right: 70px;
+  flex-wrap: wrap;
 }
 
 .htmlacademy {
@@ -552,7 +557,7 @@ a {
 .pagination {
   display: flex;
   flex-direction: row;
-  padding: 0px;
+  padding: 0;
   width: 1060px;
   margin-top: 40px;
   align-items: flex-start;
@@ -610,7 +615,8 @@ a {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-
+  width: 232px;
+  box-sizing: border-box;
 }
 
 .email {
@@ -639,21 +645,77 @@ a {
   flex-wrap: wrap;
 }
 
-.catalog-filter-group {
-  padding: 0;
-  width: 151px;
-  margin-right: 70px;
-}
-
 .catalog-filter {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+
 }
 
+.catalog-filter-group {
+  width: 151px;
+  gap: 70px;
+
+  /* margin-right: 70px; */
+
+}
+
+.catalog-filter-list {
+  padding: 0;
+}
+
+.catalog-filter-title {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.catalog-filter-item {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+
+}
+
+.value {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 70px;
+}
+
+.catalog-filter-list .catalog-filter-group {
+  flex-wrap: wrap;
+}
+
+/* поправить кнопки */
 .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 70px;
+}
+
+.right-buttoms {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
+  gap: 32px;
+  width: 191px;
 }
 
 .ptn-row {
