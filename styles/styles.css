@@ -393,6 +393,12 @@ a {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+
+}
+
+.hostel-card-title{
+  margin: 0;
+  padding: 16px;
 }
 
 .hostel-card-type {
@@ -403,6 +409,7 @@ a {
   line-height: 21px;
   color: #333333;
   max-width: 140px;
+
 }
 
 .hostel-card-item {
@@ -689,7 +696,7 @@ a {
 }
 
 .catalog-filter-value {
-  display:block;
+  display: block;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
@@ -719,7 +726,7 @@ a {
   padding: 0px;
 
   width: 191px;
-  min-height:160px;
+  min-height: 160px;
 }
 
 .ptn-row {
@@ -756,5 +763,5 @@ a {
 }
 
 .hostel-card-image {
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
 }
