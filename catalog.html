@@ -107,22 +107,25 @@
               </ul>
             </fieldset>
 
-            <div class="price">
-              <fieldset class="catalog-filter-value">
-                <legend class="catalog-filter-title">Стоимость,Р:</legend>
-                <form class="value">
-                  <!-- не могу придумать как привести к стилю как в макете -->
-                  <input class="#" type="number" min="0" max="9000" placeholder="от 0" id="1">
-                  <input class="#" type="number" min="9000" max="9000" placeholder="до 9000" id="2">
+
+            <fieldset class="catalog-filter-group catalog-filter-value">
+              <legend class="catalog-filter-title">Стоимость,Р:</legend>
+              <div class="value">
+                <div class="valueform">
+                  <input class="min" type="number" min="0" max="9000" placeholder="от 0" id="1">
+                  <input class="max" type="number" min="9000" max="9000" placeholder="до 9000" id="2">
+                </div>
+                <div class="rangeline">
                   <input type="range" min="0" max="9000" step="100" value="4500">
-                </form>
-              </fieldset>
-              <fieldset class="right-buttoms">
-                <legend class="catalog-filter-title"></legend>
-                <button type="submit" class="button button-blue " value="Применить">Применить</button>
-                <button type="reset" class="button reset">Сбросить</button>
-              </fieldset>
-            </div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="right-buttoms">
+              <legend class="catalog-filter-title"></legend>
+              <button type="submit" class="button button-blue " value="Применить">Применить</button>
+              <button type="reset" class="button reset">Сбросить</button>
+            </fieldset>
+
 
 
     </div>

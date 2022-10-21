@@ -396,7 +396,7 @@ a {
 
 }
 
-.hostel-card-title{
+.hostel-card-title {
   margin: 0;
   padding: 16px;
 }
@@ -657,16 +657,14 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0px;
-  gap: 70px;
+  padding: 0;
 
 }
 
 .catalog-filter-group {
   width: 151px;
+  margin-right: 70px;
 
-
-  /* margin-right: 70px; */
 
 }
 
@@ -691,17 +689,17 @@ a {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
-  gap: 32px;
 
 }
 
 .catalog-filter-value {
   display: block;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
-  gap: 36px;
+  padding: 0;
+  gap: 32px;
   width: 288px;
+  margin-left: auto;
 }
 
 .catalog-filter-list .catalog-filter-group {
@@ -709,25 +707,51 @@ a {
 }
 
 /* поправить кнопки */
-.price {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 70px;
 
+.value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+}
+
+.valueform {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .right-buttoms {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
-
+  padding: 0;
+  margin: 0;
   width: 191px;
   min-height: 160px;
 }
+
+.min {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  width: 143px;
+  height: 48px;
+  margin: 0;
+}
+
+.max {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  width: 143px;
+  height: 48px;
+  margin: 0;
+}
+
 
 .ptn-row {
   display: flex;
