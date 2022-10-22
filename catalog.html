@@ -12,7 +12,7 @@
       <header class="catalog-header">
         <nav class="navigation">
           <a class="main-header-logo" href="index.html">
-            <img class="page-header-logo" src="images/sedona.svg" width="138" height="70"
+            <img class="page-header-logo" src="images/sedona.svg" width="140" height="70"
               alt="Логотип сайта городка Седона">
           </a>
           <ul class="menu-main">
@@ -107,18 +107,25 @@
               </ul>
             </fieldset>
 
-            <div class="price">
-              <h3 class="catalog-filter-title">Стоимость,Р:</h3>
-              <form>
 
-                <!-- не могу придумать как привести к стилю как в макете -->
-                <input class="#" type="number" min="0" max="9000" placeholder="от 0" id="1">
-                <input class="#" type="number" min="9000" max="9000" placeholder="до 9000" id="2">
-                <input type="range" min="0" max="9000" step="100" value="4500">
-                <button type="submit" class="button button-blue " value="Применить">Применить</button>
-                <button type="reset" class="button reset">Сбросить</button>
-              </form>
-            </div>
+            <fieldset class="catalog-filter-group catalog-filter-value">
+              <legend class="catalog-filter-title">Стоимость,Р:</legend>
+              <div class="value">
+                <div class="valueform">
+                  <input class="min" type="number" min="0" max="9000" placeholder="от 0" id="1">
+                  <input class="max" type="number" min="9000" max="9000" placeholder="до 9000" id="2">
+                </div>
+                <div class="rangeline">
+                  <input type="range" min="0" max="9000" step="100" value="4500">
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="right-buttoms">
+              <legend class="catalog-filter-title"></legend>
+              <button type="submit" class="button button-blue " value="Применить">Применить</button>
+              <button type="reset" class="button reset">Сбросить</button>
+            </fieldset>
+
           </form>
         </section>
 
