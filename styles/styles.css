@@ -271,12 +271,12 @@ a {
   background: #82B3D3;
 }
 
-.sedona .line{
-  fill:rgba(255, 255, 255, 0.3);
+.sedona .line {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
-.devil .line{
-  fill:rgba(255, 255, 255, 0.3);
+.devil .line {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .services-list {
@@ -498,6 +498,17 @@ a {
   margin-right: 70px;
   width: 292px;
   padding: 14px 20px 14px 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:active {
+  border: 2px solid #3F5E72;
 }
 
 .tic {
@@ -508,10 +519,22 @@ a {
   justify-content: center;
   align-items: center;
   padding: 14px 12px;
-  border: 2px solid #000000;
+  border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin-right: 8px;
   flex-wrap: wrap;
+}
+
+.tic:hover{
+  border: 2px solid #000000;
+}
+
+.tic:focus{
+  border: 2px solid #68A2CA;
+}
+
+.tic:active{
+  border: 2px solid #000000;
 }
 
 .hostel-card {
@@ -520,6 +543,10 @@ a {
 
 .grids {
   display: flex;
+}
+
+.card {
+  fill: #000000;
 }
 
 .hostel-card-list {
@@ -853,10 +880,30 @@ a {
   margin-right: 8px;
 }
 
+.pagination-item:hover, .pagination-item:focus{
+  background: #68A2CA;
+}
+
+.pagination-link:active{
+  color:rgba(255, 255, 255, 0.3);
+}
+
+.pagination-current{
+  color:black;
+}
+
+.pagination-current:hover, .pagination-current:focus{
+  background:  #F2F2F2;
+}
+
+.pagination-current:active{
+  background:  #F2F2F2;
+}
+
 .pagination-link {
-  width: 60px;
-  background: #82B3D3;
-  border-radius: 4px;
+  /* width: 60px; */
+  /* background: #82B3D3; */
+  /* border-radius: 4px; */
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
