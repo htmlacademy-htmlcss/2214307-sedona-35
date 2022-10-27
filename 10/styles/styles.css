@@ -116,11 +116,36 @@ a {
   max-width: 125px;
   padding: 20px 16px;
   cursor: pointer;
+  position: relative;
 }
 
 .navigation-item {
   cursor: pointer;
+  position: relative;
 }
+
+.navigation-link-current::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 68px;
+  bottom: 0;
+  top: 66px;
+  background-color: #756257;
+}
+
+.navigation-link-hotels::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 93px;
+  bottom: 0;
+  top: 66px;
+  background-color: #756257;
+
+
+}
+
 
 .navigation-user {
   min-width: 268px;
@@ -141,21 +166,39 @@ a {
   padding: 1px 0px 0px 1px;
 }
 
-.navigation-user .navigation-item:nth-child(1) .navigation-link {
+.navigation-user .navigation-search .navigation-link {
   padding: 22px 12px;
   background-image: url(../images/search.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.navigation-user .navigation-item:nth-child(2) .navigation-link {
+.navigation-user .navigation-like .navigation-link {
   padding: 22px 12px;
   background-image: url(../images/heart.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-
+.navigation-like::after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 20px;
+  top: 11px;
+  z-index: 1;
+  content: "12";
+  color: white;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  background: #7DB54F;
+  border-radius: 10px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
 
 .welcome {
   background-color: aqua;
@@ -220,12 +263,42 @@ a {
   flex-wrap: wrap;
   text-align: center;
   margin: 0;
+
 }
 
 .advantages-item {
   width: 230px;
   text-align: center;
   padding: 92px 85px;
+  position: relative;
+
+}
+
+.advantages-title::before {
+  background-image: url(../images/Rectangle\ 125.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  fill: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  top: 189px;
+  left: 170px;
+}
+
+.current .advantages-title::before {
+  background-image: url(../images/Rectangle\ 125.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  bottom: 0;
+  top: 178px;
+  left: 170px;
+  fill: rgba(255, 255, 255, 0.3);
+
 }
 
 .advantages-item:nth-child(2n) {
@@ -255,7 +328,7 @@ a {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  margin-top: 30px;
+  margin-top: 62px;
 }
 
 .devil {
@@ -299,6 +372,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .line {
@@ -306,18 +380,16 @@ a {
   margin: 30px 85px 0;
 }
 
-.services-item:nth-child(1)::before {
+.background-house::before {
   background-image: url(../images/house.svg);
   background-repeat: no-repeat;
   content: "";
   width: 75px;
   height: 72px;
   align-self: center;
-
-
 }
 
-.services-item:nth-child(2)::before {
+.background-food::before {
   background-image: url(../images/food.svg);
   background-repeat: no-repeat;
   content: "";
@@ -327,15 +399,16 @@ a {
 
 }
 
-.services-item:nth-child(3)::before {
+.background-gift::before {
   background-image: url(../images/gift.svg);
   background-repeat: no-repeat;
   content: "";
-  width: 74px;
-  height: 70px;
+  width: 64px;
+  height: 76px;
   align-self: center;
 
 }
+
 
 .services-item:nth-child(odd) {
   background: rgba(131, 179, 211, 0.12);
@@ -525,15 +598,15 @@ a {
   flex-wrap: wrap;
 }
 
-.tic:hover{
+.tic:hover {
   border: 2px solid #000000;
 }
 
-.tic:focus{
+.tic:focus {
   border: 2px solid #68A2CA;
 }
 
-.tic:active{
+.tic:active {
   border: 2px solid #000000;
 }
 
@@ -749,7 +822,7 @@ a {
 }
 
 .catalog-products {
-  background-image: url("..//images/back.jpg");
+  background-image: url("../images/back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -880,24 +953,26 @@ a {
   margin-right: 8px;
 }
 
-.pagination-item:hover, .pagination-item:focus{
+.pagination-item:hover,
+.pagination-item:focus {
   background: #68A2CA;
 }
 
-.pagination-link:active{
-  color:rgba(255, 255, 255, 0.3);
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.pagination-current{
-  color:black;
+.pagination-current {
+  color: black;
 }
 
-.pagination-current:hover, .pagination-current:focus{
-  background:  #F2F2F2;
+.pagination-current:hover,
+.pagination-current:focus {
+  background: #F2F2F2;
 }
 
-.pagination-current:active{
-  background:  #F2F2F2;
+.pagination-current:active {
+  background: #F2F2F2;
 }
 
 .pagination-link {
