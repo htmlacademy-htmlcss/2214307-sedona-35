@@ -85,16 +85,20 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-
-                    <input type="checkbox" name="a" value="Бассейн"> Бассейн
+                    <input class="visually-hidden box" type="checkbox" name="pool" value="Бассейн" checked>
+                    <span class="control-mark"></span>
+                    Бассейн
                   </label>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input type="checkbox" name="a" value="Парковка"> Парковка
-                  </label>
+                    <input class="visually-hidden box" type="checkbox" name="parking" value="Парковка" checked>
+                    <span class="control-mark"></span>
+                    Парковка</label>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input type="checkbox" name="a" value="Wi-Fi">Wi-Fi
+                    <input class="visually-hidden box" type="checkbox" name="Wi-Fi" value="Wi-Fi">
+                    <span class="control-mark"></span>
+                    Wi-Fi
                   </label>
                 </li>
               </ul>
@@ -104,18 +108,21 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input type="radio" name="hostel1" value="hostel">
+                    <input class="visually-hidden radio-control" type="radio" name="hostel1" value="hostel" checked>
+                    <span class="control-round"></span>
                     Гостиница
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input type="radio" name="hostel2" value="motel">
+                    <input class="visually-hidden radio-control" type="radio" name="hostel2" value="motel">
+                    <span class="control-round"></span>
                     Мотель
                   </label>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input type="radio" name="hostel3" value="apartments">
+                    <input class="radio-control  visually-hidden" type="radio" name="hostel3" value="apartments">
+                    <span class="control-round"></span>
                     Апартаменты
                   </label>
                 </li>
@@ -127,20 +134,29 @@
               <legend class="catalog-filter-title">Стоимость,Р:</legend>
               <div class="value">
                 <div class="valueform">
-                  <input class="min" type="number" min="0" max="9000" placeholder="от 0" id="1">
-                  <input class="max" type="number" min="9000" max="9000" placeholder="до 9000" id="2">
+                  <label class="label-min">
+                    <input class="range-input" type="number" min="0" max="9000" placeholder="0" id="min">
+                  </label>
+                  <label class="label-max">
+                    <input class="range-input" type="number" min="9000" max="9000" placeholder="9000" id="max">
+                  </label>
                 </div>
                 <div class="rangeline">
                   <!-- <input type="range" min="0" max="9000" step="100" value="4500"> -->
                   <div class="range-bar">
-
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
                   </div>
                 </div>
               </div>
             </fieldset>
             <fieldset class="right-buttoms">
               <legend class="catalog-filter-title"></legend>
-              <button type="submit" class="button button-blue " value="Применить">Применить</button>
+              <button type="submit" class="button button-blue sub " value="Применить">Применить</button>
               <button type="reset" class="button reset">Сбросить</button>
             </fieldset>
 
@@ -202,10 +218,10 @@
                 <a class="button-blue button" href="#">В избранное</a>
               </div>
               <div class="rating-mini ptn-row">
-                <span class="active">*</span>
-                <span class="active">*</span>
-                <span class="active">*</span>
-                <span></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
                 <span></span>
                 <span class="button rating">Рейтинг: 8,5</span>
               </div>
@@ -224,10 +240,10 @@
                 <a class="button green" href="#">В избранном</a>
               </div>
               <div class="rating-mini ptn-row">
-                <span class="active">*</span>
-                <span class="active">*</span>
-                <span class="active">*</span>
-                <span></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
                 <span></span>
                 <span class=" button rating">Рейтинг: 9,2</span>
               </div>
@@ -246,9 +262,9 @@
                 <a class="button-blue  button" href="#">В избранное</a>
               </div>
               <div class="rating-mini ptn-row">
-                <span class="active">*</span>
-                <span class="active">*</span>
-                <span class="active">*</span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
                 <span></span>
                 <span></span>
                 <span class="button rating">Рейтинг: 6,9</span>
@@ -268,11 +284,12 @@
                 <a class="button-blue  button" href="#">В избранное</a>
               </div>
               <div class="rating-mini ptn-row">
-                <span class="active">*</span>
-                <span class="active">*</span>
-                <span class="active">*</span>
+                <span class="active"></span>
+                <span class="active"></span>
                 <span></span>
                 <span></span>
+                <span></span>
+
                 <span class="button rating">Рейтинг: 5,0</span>
               </div>
             </li>
@@ -344,7 +361,7 @@
           </ul>
           <a class="telephone" href="tel:+7(812)812-12-12">+7(812)812-12-12</a>
           <a class="htmlacademy" href="https://htmlacademy.ru/intensive">
-            <svg class="htmlacademy-svg" aria-hidden="true width=" 115 height="34" viewBox="0 0 115 34"
+            <svg class="htmlacademy-svg" aria-hidden="true" width="115" height="34" viewBox="0 0 115 34"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" />
               <path
