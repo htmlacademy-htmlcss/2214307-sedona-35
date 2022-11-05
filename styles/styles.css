@@ -206,11 +206,25 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   Width: 100%;
+  position: relative;
 }
 
 .logo {
   display: block;
   padding: 51px 371px 82px;
+
+}
+
+.welcome::before{
+  position: absolute;
+  left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+content: "";
+background-image: url(../images/Vector.svg);
+background-position:bottom;
+background-repeat: no-repeat;
 }
 
 .info {
