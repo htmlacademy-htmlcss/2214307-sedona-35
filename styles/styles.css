@@ -1442,6 +1442,30 @@ a {
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  background: #E6E6E6;
+  background-image: url(../images/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-close-button:focus {
+  background: #E6E6E6;
+  border: 3px solid #83B3D3;
+  background-image: url(../images/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-close-button:active {
+   background-image: url(../images/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background: #E6E6E6;
+  opacity: 0.3;
+  border: none;
+}
+
 .modal-title {
   width: 413px;
   font-style: normal;
@@ -1678,7 +1702,7 @@ a {
   /* display:none; */
 }
 
-.tooltip-text::after{
+.tooltip-text::after {
   content: "";
   width: 0;
   height: 0;
