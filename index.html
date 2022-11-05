@@ -215,42 +215,75 @@
           <!-- Подвал сайта -->
         </div>
       </footer>
-      <div class="modal-container">
+      <div class="modal-container modal-container-close">
         <div class="modal modal-search">
           <button class="modal-close-button">
             <span class="visually-hidden">Закрыть</span>
           </button>
           <section class="modal-content">
-          <h2 class="modal-title">поиск гостиницы в седоне</h2>
-          <form class="modal-forms" action="">
-            <p class="field-group">
-              <label class="dates">Дата заезда:
-                <input type="text">
-              </label>
-            </p>
-            <p class="field-group">
-              <label class="dates">Дата выезда:
-                <input type="text">
-              </label>
-            </p>
-            <div class="children">
-            <p class="field-group">
-              <label class="dates">Взрослые:
-                <input type="text">
-              </label>
-            </p>
-            <p class="field-group">
-              <label class="dates">Дети:
-                <input type="text">
-              </label>
-            </p>
-          </div>
-          </form>
+            <h2 class="modal-title">поиск гостиницы в седоне</h2>
+            <form class="modal-forms" action="#">
+              <p class="field-group">
+                <label class="dates">Дата заезда:</label>
+                <input class="come" type="text" placeholder="27 апреля 2020" required>
 
-            <span>КАК СДЕЛАТЬ ЭТО ДОЛБАНОЕ УВЕДОМЛЕНИЕ О ДЕТЯХ!!!!!</span>
-          </form>
-          <a class="modal-send" href="#">Найти</a>
-        </section>
+              </p>
+              <p class="incorrectdata">Мы не можем отправить вас в прошлое.</p>
+              <p class="field-group">
+                <label class="dates">Дата выезда:</label>
+                <input class=" comeback come" type="text" placeholder="1 сентября 2023" required>
+              </p>
+              <p class="freerooms">На эти даты есть свободные номера. Пока есть.</p>
+              <div class="children">
+                <p class="field-human">
+                  <label class="dates">Взрослые:</label>
+                  <button class="symbol symbolleft">
+                    <svg class="minus" width="14" height="2" viewBox="0 0 14 2" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z">
+                    </svg>
+                  </button>
+                  <input class="humans" type="text" placeholder="2">
+                  <button class="symbol">
+                    <svg class="plus" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                    </svg>
+
+                  </button>
+
+                </p>
+                <p class="field-human">
+                  <label class="dates child">Дети:
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button">
+                        <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
+                        </svg>
+                      </button>
+                      <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до
+                        18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                  </label>
+                  <button class="symbol symbolleft">
+                    <svg class="minus" width="14" height="2" viewBox="0 0 14 2" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z">
+                    </svg>
+                  </button>
+                  <input class="humans" type="text" placeholder="2">
+                  <button class="symbol">
+                    <svg class="plus" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                    </svg>
+                  </button>
+                </p>
+              </div>
+              <a class="modal-send-button" href="#">Найти</a>
+
+            </form>
+          </section>
         </div>
       </div>
     </div>
