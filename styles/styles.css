@@ -1615,8 +1615,12 @@ a {
   fill: black;
 }
 
-.child {
+.symbol:active .plus,
+.symbol:active .minus {
+  opacity: 0.2;
+}
 
+.child {
   position: relative;
 }
 
