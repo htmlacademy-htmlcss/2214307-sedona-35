@@ -215,16 +215,16 @@ a {
 
 }
 
-.welcome::before{
+.welcome::before {
   position: absolute;
   left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-content: "";
-background-image: url(../images/Vector.svg);
-background-position:bottom;
-background-repeat: no-repeat;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  content: "";
+  background-image: url(../images/Vector.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .info {
@@ -1246,26 +1246,24 @@ background-repeat: no-repeat;
 }
 
 .stars {
-  margin: 10px 0;
-  margin-right: 20px;
+  background-image: url("../images/star.svg");
+  background-repeat: space;
+  background-size: contain;
+  height: 17px;
+
 }
 
 .stars-4 {
-  width: 90px;
-  background: url("../images/star.svg") -4px 0 / 24px 15px repeat-x;
-  height: 17px;
+  width: 84px;
 }
 
 .stars-3 {
-  width: 70px;
-  background: url("../images/star.svg") -4px 0 / 24px 15px repeat-x;
-  height: 17px;
-}
+  width: 66px;
+  }
 
 .stars-2 {
-  width: 50px;
-  background: url("../images/star.svg") -4px 0 / 25px 15px repeat-x;
-  height: 17px;
+  width: 48px;
+
 }
 
 .ptn-row {
