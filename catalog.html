@@ -44,7 +44,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="button" href="#">Хочу сюда</a>
+              <a class="button want" href="#">Хочу сюда!</a>
             </li>
           </ul>
 
@@ -84,19 +84,21 @@
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden box" type="checkbox" name="pool" value="Бассейн" checked>
+                  <label class="control" >
+                    <input class="visually-hidden box"  type="checkbox" name="pool" value="Бассейн"
+                      checked>
                     <span class="control-mark"></span>
                     Бассейн
                   </label>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden box" type="checkbox" name="parking" value="Парковка" checked>
+                  <label class="control" for="park">
+                    <input class="visually-hidden box" type="checkbox" id="park" name="parking" value="Парковка"
+                      checked>
                     <span class="control-mark"></span>
                     Парковка</label>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden box" type="checkbox" name="Wi-Fi" value="Wi-Fi">
+                  <label class="control" >
+                    <input class="visually-hidden box" type="checkbox" id="ithernet" name="Wi-Fi" value="Wi-Fi">
                     <span class="control-mark"></span>
                     Wi-Fi
                   </label>
@@ -107,21 +109,23 @@
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden radio-control" type="radio" name="hostel" value="hostel" checked>
+                  <label class="control" for="mini">
+                    <input class="visually-hidden radio-control" type="radio" id="mini" name="hostel" value="hostel"
+                      checked>
                     <span class="control-round"></span>
                     Гостиница
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden radio-control" type="radio" name="hostel" value="motel">
+                  <label class="control" for="midl">
+                    <input class="visually-hidden radio-control" type="radio" id="midl" name="hostel" value="motel">
                     <span class="control-round"></span>
                     Мотель
                   </label>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="radio-control  visually-hidden" type="radio" name="hostel" value="apartments">
+                  <label class="control" for="large">
+                    <input class="radio-control  visually-hidden" type="radio" id="large" name="hostel"
+                      value="apartments">
                     <span class="control-round"></span>
                     Апартаменты
                   </label>
@@ -134,15 +138,14 @@
               <legend class="catalog-filter-title">Стоимость,Р:</legend>
               <div class="value">
                 <div class="valueform">
-                  <label class="label-min">
-                    <input class="range-input" type="number" min="0" max="9000" placeholder="0" id="min">
+                  <label class="label-min" for="minimum">
+                    <input class="range-input zero" type="number" min="0" max="9000" placeholder="0" id="minimum">
                   </label>
-                  <label class="label-max">
-                    <input class="range-input" type="number" min="9000" max="9000" placeholder="9000" id="max">
+                  <label class="label-max" for="maximum">
+                    <input class="range-input" type="number" min="9000" max="9000" id="maximum" placeholder="9000">
                   </label>
                 </div>
                 <div class="rangeline">
-                  <!-- <input type="range" min="0" max="9000" step="100" value="4500"> -->
                   <div class="range-bar">
                     <button class="range-toggle toggle-min">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
@@ -209,7 +212,7 @@
                 <img class="hostel-card-image" src="images/hotel-1.jpg" width="300" height="212" alt="Дырка в скале">
                 <h3 class="hostel-card-title">Amara Resort & Spa</h3>
               </a>
-              <div class="ptn-row">
+              <div class="ptn-row hostel-price">
                 <b class="hostel-card-type">Гостиница</b>
                 <p class="hostel-card-type">От 4000 ₽</p>
               </div>
@@ -311,7 +314,7 @@
       <footer class="catalog-footer">
         <section class="footer-post footer-post-catalog">
           <h2 class="catalog-footer-post">Подпишитесь на рассылку</h2>
-          <p class="catalog-footer-description">Только полезная информация и никакого спама,честное бойскаутское!</p>
+          <p class="catalog-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="new-form" action="http://echo.htmlacademy.ru/" method="post">
             <label for="email">
               <span class="visually-hidden">Введите e-mail.</span>
@@ -351,7 +354,7 @@
               </a>
             </li>
           </ul>
-          <a class="telephone" href="tel:+7(812)812-12-12">+7(812)812-12-12</a>
+          <a class="telephone" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
           <a class="htmlacademy" href="https://htmlacademy.ru/intensive">
             <svg class="htmlacademy-svg" aria-hidden="true" width="115" height="34" viewBox="0 0 115 34"
               xmlns="http://www.w3.org/2000/svg">
