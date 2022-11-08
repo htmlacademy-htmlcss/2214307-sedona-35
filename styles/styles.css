@@ -224,7 +224,7 @@ a {
 .info {
   background: #FFFFFF;
   text-align: center;
-  margin: 69px 291px 90px 289px;
+  margin: 69px 0 90px 0;
 
 }
 
@@ -237,6 +237,7 @@ a {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0 289px 0 291px;
 
 }
 
@@ -248,9 +249,9 @@ a {
   line-height: 26px;
   color: #333333;
   width: 651px;
-  margin: 0;
   text-align: center;
-
+  margin: 0 auto;
+  margin-top: 25px;
 }
 
 .sedona {
