@@ -1263,6 +1263,7 @@ a {
     min-height: 22px;
     border-radius: 0px 4px 4px 0px;
     border: none;
+    margin-left:2px;
   }
 
   .zero {
