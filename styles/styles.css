@@ -698,8 +698,12 @@ a {
     padding: 14px 12px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
-    margin-right: 4px;
+    margin-right: 6px;
     flex-wrap: wrap;
+  }
+
+  .tic:last-child{
+    margin: 0;
   }
 
   .tic:hover {
@@ -780,7 +784,7 @@ a {
   }
 
   .footer-post {
-    background-image: url("../images/razmitiy.jpg");
+    background-image: url("../images/subscribe.jpg");
     width: 684px;
     justify-content: center;
     font-family: "PT Sans", sans-serif;
@@ -1259,9 +1263,9 @@ a {
     flex-direction: row;
     align-items: flex-start;
     padding: 14px 22px;
-    width: 101px;
+    width: 98px;
     min-height: 22px;
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0 4px 4px 0;
     border: none;
     margin-left:2px;
   }
